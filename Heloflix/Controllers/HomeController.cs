@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Heloflix.Models;
+using 
+
 
 namespace Heloflix.Controllers;
 
@@ -15,7 +17,27 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        List<Genre> genres = new()
+        {
+            new Genre()
+            {
+                Id = 1,
+                nameof = "Ação"
+            },
+            {
+                new Genre()
+                Id = 2,
+                nameof = "Terror"
+            }
+        };
+        genres.Add(
+            new()
+            {
+                Id = 3,
+                nameof = "Drama"
+            }
+        );
+        return View(genres);
     }
 
     public IActionResult Privacy()
