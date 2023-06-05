@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ZazaFlix.Models;
+namespace HeloFlix.Models;
 
 public class Genre
 {

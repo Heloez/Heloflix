@@ -1,10 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Heloflix.Models;
-using 
+using HeloFlix.Models;
 
-
-namespace Heloflix.Controllers;
+namespace HeloFlix.Controllers;
 
 public class HomeController : Controller
 {
@@ -22,19 +20,19 @@ public class HomeController : Controller
             new Genre()
             {
                 Id = 1,
-                nameof = "Ação"
+                Name = "Ação"
             },
+            new Genre()
             {
-                new Genre()
                 Id = 2,
-                nameof = "Terror"
+                Name = "Terror"
             }
         };
         genres.Add(
-            new()
+            new Genre()
             {
                 Id = 3,
-                nameof = "Drama"
+                Name = "Drama"
             }
         );
         return View(genres);

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ZazaFlix.Models;
+namespace HeloFlix.Models;
 
 public class Movie
 {
@@ -39,5 +39,3 @@ public class Movie
     } }
 
 }
-
-
