@@ -1,4 +1,4 @@
-namespace Heloflix.Models;
+namespace HeloFlix.Models;
 
 public class ErrorViewModel
 {

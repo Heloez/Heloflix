@@ -1,4 +1,4 @@
-﻿@model List<Heloflix.Models.Genre>
+﻿@model List<HeloFlix.Models.Genre>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -10,5 +10,5 @@
 
 @foreach (var genre in Model)
 {
-    <p>@genre.Td - @genre.Name</p> 
+    <p>@genre.Id - @genre.Name</p> 
 }

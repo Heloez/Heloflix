@@ -1,7 +1,7 @@
 using  HeloFlix.Models;
 
-namespace HeloFlix.interfaces;
+namespace HeloFlix.Interfaces;
 
-public interface IGenreRepository  : IRepository<Genre>
+public interface IGenreRepository : IRepository<Genre>
 {
 }

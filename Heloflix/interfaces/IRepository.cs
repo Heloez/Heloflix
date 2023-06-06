@@ -1,4 +1,4 @@
-namespace Heloflix.interfaces;
+namespace HeloFlix.Interfaces;
 
     public interface IRepository<T> where T : class
     {
