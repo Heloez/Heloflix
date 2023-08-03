@@ -1,14 +1,17 @@
 namespace HeloFlix.Interfaces;
 
-    public interface IRepository<T> where T : class
-    {
-      void Create (T model);  
+public interface IRepository<T> where T : class
+{
+    // CRUD: CREATE, READ, UPADTE, DELETE 
+    // 4 Operações básicas de todo banco de dados
+    void Create(T model); // Add 
 
-      List<T> ReadAll();
+    List<T> ReadAll(); // Get 
 
-      T ReadById (int? id); 
+    T ReadById(int? id); // Get(id)
 
-      void Update (T model);
+    void Update(T model); //Edit
 
-      void Delete (int? id);
-    }
+    void Delete(int? id);
+}
+
