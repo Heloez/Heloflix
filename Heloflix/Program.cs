@@ -1,7 +1,13 @@
+using HeloFlix.Interfaces;
+using HeloFlix.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<IGenreRepository, GenreRepository>();
+builder.Services.AddTransient<IMovieRepository, MovieRepository>();
 
 var app = builder.Build();
 

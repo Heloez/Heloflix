@@ -1,4 +1,4 @@
-﻿@model List<HeloFlix.Models.Genre>
+﻿@model List<HeloFlix.Models.Movie>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -8,7 +8,7 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-@foreach (var genre in Model)
+@foreach (Movie movie in Model)
 {
-    <p>@genre.Id - @genre.Name</p> 
+    <p>@movie.Id - @movie.Title</p>
 }
