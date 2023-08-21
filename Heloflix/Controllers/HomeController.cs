@@ -19,8 +19,14 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var movies = _movieRepository.ReadAll();
+        var movies = _movieRepository.ReadAllDetailed();
         return View(movies);
+    }
+
+    public IActionResult Movie(int id)
+    {
+        var movie  = _movieRepository.ReadByIdDetailed(id);
+        return View(movie);
     }
 
     public IActionResult Privacy()
@@ -35,3 +41,4 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
+
